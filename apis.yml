@@ -1,7 +1,17 @@
 aid: aiguang
 name: Aiguang
-description: 'Aiguang is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Aiguang (爱逛) is a Hangzhou, China live-streaming and short-video commerce
+  platform built on the WeChat ecosystem. Consumers enter live rooms through the Aiguang
+  WeChat mini-program and the Aiguang mobile app to take part in limited-time discounts,
+  group buys and live-stream giveaways, while merchants and MCN hosts run their broadcasts
+  from the Aiguang seller app and a PC live-broadcast console carrying interaction,
+  marketing, promotion and analytics tooling. The platform is wired into the Youzan
+  (有赞) CPS product pool so viewers can resell what they watch. Per its own user agreement
+  and privacy statement (effective 2025-01-17) the platform is operated by 杭州杨杨得翼文化有限公司
+  (Hangzhou Yangyang Deyi Culture Co., Ltd.). Aiguang publishes no public developer
+  program, API reference or machine-readable contract; its merchant, supplier and MCN
+  surfaces are reached through account logins and a merchant community forum.'
+image: https://img.yzcdn.cn/guang/intro/20200410/logo@3x.png
 url: https://raw.githubusercontent.com/api-evangelist/aiguang/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,15 @@ created: '2026-09-14'
 modified: '2026-09-14'
 tags:
 - Company
+- E-Commerce
+- Live Commerce
+- Live Streaming
+- Social Commerce
+- Retail
+- Video
+- WeChat
+- China
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,52 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.guang.com/
+- type: Support
+  url: https://bbs.guang.com/d/32
+- type: Community
+  url: https://bbs.guang.com/
+- type: ChangeLog
+  url: changelog/aiguang-changelog.yml
+- type: Lifecycle
+  url: lifecycle/aiguang-lifecycle.yml
+- type: Pricing
+  url: https://bbs.guang.com/d/875
+- type: Login
+  url: https://www.guang.com/v4/guang/liveshopping/login
+- type: TermsOfService
+  url: https://bbs.guang.com/d/964
+- type: PrivacyPolicy
+  url: https://bbs.guang.com/d/965
+- type: Plans
+  url: plans/aiguang-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/aiguang-llms.txt
+- type: DomainSecurity
+  url: security/aiguang-domain-security.yml
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Aiguang ships a consumer WeChat live-commerce app and an account-gated merchant/supplier
+    console and publishes no developer program at all — its merchant forum bbs.guang.com is the
+    only public technical surface, and both guang.com and www.guang.com answer HTTP 200 on every
+    unknown path (an applinks catch-all and a single-page-app shell respectively), so the 200s on
+    /openapi.json and /.well-known/agent-card.json are soft-404s, not documents.
+  evidence:
+  - url: https://www.guang.com/openapi.json
+    status: 200
+  - url: https://guang.com/.well-known/agent-card.json
+    status: 200
+  - url: https://api.guang.com/openapi.json
+    status: 404
+  - url: https://bbs.guang.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.guang.com/
+    status: 200
+  checked: '2026-09-14'

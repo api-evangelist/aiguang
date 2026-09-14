@@ -1,0 +1,213 @@
+generated: '2026-09-14'
+method: probed
+source: live HTTPS probes of every host this record knows (2026-09-14)
+note: >-
+  No .well-known document is served by Aiguang. Every probe on guang.com and aiguang.com
+  returned HTTP 200, but the body is always the SAME 477-byte / 213-byte Apple universal-links
+  "applinks" JSON (naming the appIDs T2RS3LYLB6.com.aiguang.business / .user / .guangshop)
+  — a catch-all that answers every /.well-known/* path with the apple-app-site-association
+  payload. www.guang.com answers every path with the same 5,354-byte single-page-app shell.
+  Those 200s are NOT documents and are recorded here as misses. api.guang.com (a Youzan-served
+  host) and bbs.guang.com return honest 404s. No WellKnown, SecurityTxt, APICatalog or AgentCard
+  pointer is emitted, because the provider serves none of these surfaces.
+hosts:
+- host: guang.com
+  note: catch-all — every path returns the apple-app-site-association applinks JSON (477 bytes)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not an RFC 9116 security.txt
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not OpenID Provider metadata
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not RFC 8414 metadata
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not RFC 9728 metadata
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not an RFC 9727 api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not a plugin manifest
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body — no name/url/version/protocolVersion/capabilities/skills, not an A2A AgentCard
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not a legacy A2A AgentCard
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body — no issuer/jwks_uri
+- host: www.guang.com
+  note: catch-all — every path returns the 5,354-byte SPA shell (text/html)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not an A2A AgentCard
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not an A2A AgentCard
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    result: miss
+    detail: SPA HTML shell, not a document
+- host: aiguang.com
+  note: alias domain for guang.com; same applinks catch-all (213 bytes)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not an RFC 9116 security.txt
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not an A2A AgentCard
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    result: miss
+    detail: 200 with applinks JSON body, not an A2A AgentCard
+- host: api.guang.com
+  note: resolves and serves a Youzan (有赞) 404 page; no Aiguang API is published here
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    result: miss
+- host: bbs.guang.com
+  note: merchant community forum (Flarum); honest 404s
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    result: miss

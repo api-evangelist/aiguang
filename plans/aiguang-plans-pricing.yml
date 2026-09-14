@@ -1,0 +1,55 @@
+generated: '2026-09-14'
+method: searched
+source: https://bbs.guang.com/d/875
+docs:
+- https://bbs.guang.com/d/875
+- https://bbs.guang.com/d/907
+currency: CNY
+model: transaction-fee
+plan_count: 0
+note: >-
+  Aiguang publishes no subscription plans or tiers. Merchant economics are transaction-fee
+  based and published as platform rules on the Aiguang merchant forum rather than on a
+  pricing page. There is no public API and therefore no API pricing of any kind; the fees
+  below govern selling on the live-commerce platform itself.
+plans: []
+fees:
+- name: 推广服务费 (promotion service fee)
+  basis: percentage of the payment amount of each completed order
+  rate_min_percent: 2.0
+  rate_max_percent: 6.0
+  varies_by: product category of the traded goods
+  effective: '2023-01-11'
+  source: https://bbs.guang.com/d/875
+  note: >-
+    "以交易商品类目的不同而收取不同比例的费用，比例区间为每笔完成订单支付金额的 2.00%-6.00%" — the
+    per-category rate table is rendered as an image in the forum post and is not published
+    as machine-readable data. Special goods are excluded.
+- name: 爱逛放心购 (Aiguang Worry-Free Purchase buyer-protection service)
+  basis: per actually-shipped order, banded by the merchant's 90-day return-and-refund rate
+  rate: null
+  effective: '2023-01-11'
+  withdrawn: '2025-04-03'
+  status: discontinued
+  withdrawal_source: https://bbs.guang.com/d/967
+  source: https://bbs.guang.com/d/875
+  note: >-
+    Charged by default (merchants may opt out). Band thresholds update on the 1st and 15th
+    of each month; the fee table is an image in the forum post, so no numeric rate is recorded
+    here rather than guessed.
+- name: 达人佣金 (host/affiliate commission)
+  basis: merchant-set percentage paid to the promoting host, settled 15 days after goods payment settles
+  rate: null
+  source: https://bbs.guang.com/d/907
+  note: Rate is set per merchant/host agreement, not published by the platform.
+removed_fees:
+- name: 技术服务费 charged to promoters/hosts
+  removed: '2023-01-11'
+  source: https://bbs.guang.com/d/875
+settlement:
+  non_video_channel: settles after buyer confirms receipt, auto-confirmed 7 days after shipment
+  video_channel: settles on day 21 after the merchant marks the order shipped
+  withdrawal: Youzan store back office, 资产 > 可用店铺余额
+  source: https://bbs.guang.com/d/907
+  rule_effective: '2023-04-23'
+  rule_revised: '2024-02-21'

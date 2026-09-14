@@ -1,0 +1,95 @@
+generated: '2026-09-14'
+method: searched
+source: https://bbs.guang.com/t/2-1
+docs:
+- https://bbs.guang.com/t/2-1
+- https://bbs.guang.com/t/2-4
+scheme: dated-announcements
+current_version: null
+note: >-
+  Aiguang publishes no API changelog, because it publishes no API. It does run a real, dated
+  platform announcement feed on its merchant community forum: the 公告 (announcements) category
+  carries 66 posts of product launches, feature changes and fee adjustments, and the sibling
+  公示 (public notice) category carries 77 advance notices of rule changes. Entries below are
+  transcribed from that feed with the dates the posts themselves state. This is a merchant
+  product changelog, not a developer changelog.
+categories:
+- name: 公告 (announcements)
+  url: https://bbs.guang.com/t/2-1
+  entry_count: 66
+- name: 公示 (advance public notice of rule changes)
+  url: https://bbs.guang.com/t/2-4
+  entry_count: 77
+- name: 规则 (platform rules)
+  url: https://bbs.guang.com/t/2-3
+  entry_count: 114
+entries:
+- date: '2025-04-03'
+  title: 爱逛放心购业务下架公告 (Aiguang Worry-Free Purchase service discontinued)
+  type: removal
+  breaking: true
+  url: https://bbs.guang.com/d/967
+  highlights:
+  - The 爱逛放心购 buyer-protection / shipping-insurance service is withdrawn effective the same day.
+  - Policies already purchased stay in force under the original rules.
+  - Existing return and shipping-cost policy is unchanged for buyers.
+- date: '2025-01-17'
+  title: 用户协议 and 隐私声明 reissued
+  type: legal
+  breaking: false
+  url: https://bbs.guang.com/d/964
+  highlights:
+  - New User Agreement and Privacy Statement issued under operator 杭州杨杨得翼文化有限公司, effective 2025-01-17.
+- date: '2024-07-19'
+  title: 关于直播回放功能变更的通知 (live-replay feature change)
+  type: change
+  breaking: false
+  url: https://bbs.guang.com/d/962
+- date: '2024-02-21'
+  title: 关于《爱逛结算规则》变更的公示 (settlement rules revised)
+  type: change
+  breaking: false
+  url: https://bbs.guang.com/d/954
+- date: '2024-02-02'
+  title: 关于2024春节期间发货时效及交易时效等调整的公告 (Spring Festival shipping/trade timing adjustments)
+  type: change
+  breaking: false
+  url: https://bbs.guang.com/d/952
+- date: '2024-01-12'
+  title: 视频号渠道订单技术年费调整公告 (WeChat Channels order technical annual-fee adjustment)
+  type: pricing
+  breaking: false
+  url: https://bbs.guang.com/d/950
+- date: '2023-12-06'
+  title: 【产品公告】手机直播美颜功能调整的公告 (mobile live-stream beauty filter change)
+  type: change
+  breaking: false
+  url: https://bbs.guang.com/d/947
+- date: '2023-07-27'
+  title: 【产品公告】供货商发票功能上线公告 (supplier invoicing feature launched)
+  type: addition
+  breaking: false
+  url: https://bbs.guang.com/d/924
+- date: '2023-06-16'
+  title: 视频号渠道低价商品需设置包邮公告 (free-shipping requirement for low-price Channels goods)
+  type: change
+  breaking: true
+  url: https://bbs.guang.com/d/922
+- date: '2023-05-26'
+  title: 供货分销业务暂停运营公告 (supplier distribution business suspended)
+  type: removal
+  breaking: true
+  url: https://bbs.guang.com/d/919
+- date: '2023-05-26'
+  title: 618大促「爱逛-视频号技术服务费代收」费率下调公告 (618 technical service fee rate reduction)
+  type: pricing
+  breaking: false
+  url: https://bbs.guang.com/d/920
+- date: '2023-01-11'
+  title: 爱逛供货商（带货推广）收费调整通知 (supplier promotion fee schedule replaced)
+  type: pricing
+  breaking: true
+  url: https://bbs.guang.com/d/875
+  highlights:
+  - Promotion service fee set at 2.00%-6.00% of each completed order's payment amount, by product category.
+  - Technical service fee on promoters/hosts removed.

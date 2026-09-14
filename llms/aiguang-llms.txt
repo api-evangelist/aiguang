@@ -1,0 +1,56 @@
+# Aiguang (爱逛)
+
+> Aiguang is a Hangzhou, China live-streaming and short-video commerce platform built on the
+> WeChat ecosystem. Consumers enter live rooms through the Aiguang WeChat mini-program and the
+> Aiguang mobile app; merchants and MCN hosts broadcast from the Aiguang seller app and a PC
+> live-broadcast console with interaction, marketing, promotion and analytics tooling. The
+> platform is wired into the Youzan (有赞) CPS product pool. Its user agreement and privacy
+> statement, effective 2025-01-17, name 杭州杨杨得翼文化有限公司 (Hangzhou Yangyang Deyi Culture
+> Co., Ltd.) as the operator.
+
+## IMPORTANT FOR AGENTS — there is no public API
+
+Aiguang publishes **no public API, no developer portal, no API reference, and no
+machine-readable contract**. Contract discovery on 2026-09-14 probed guang.com, www.guang.com,
+aiguang.com, api.guang.com and bbs.guang.com for OpenAPI, Swagger, GraphQL introspection, MCP
+`tools/list`, AsyncAPI, WSDL, gRPC/protobuf and every `/.well-known/` discovery document, and
+found none. Note two traps if you probe it yourself:
+
+- `guang.com` and `aiguang.com` answer **HTTP 200 on every `/.well-known/*` path** with the same
+  Apple universal-links `applinks` JSON. That is a catch-all, not a document. In particular,
+  `/.well-known/agent-card.json` returns 200 and is **not** an A2A agent card.
+- `www.guang.com` answers **HTTP 200 on every unknown path** with a 5,354-byte single-page-app
+  shell — `/openapi.json`, `/llms.txt`, `/robots.txt`, `/about`, `/privacy` all return it. Read
+  the body, not the status code.
+- `api.guang.com` resolves but serves a Youzan (有赞) 404 page; no Aiguang API is published there.
+
+Merchant, supplier and MCN access is via account login and the merchant community forum.
+
+## Official surfaces
+
+- [Aiguang homepage](https://www.guang.com/): platform overview, merchant case studies (TCL, 王府井, 雅戈尔, 阿芙精油, 博洋家纺).
+- [Merchant live-shopping console login](https://www.guang.com/v4/guang/liveshopping/login): account-gated merchant broadcast console.
+- [Supplier platform](https://guang.com/v5/supplier/account): account-gated 爱逛供货商平台.
+- [Merchant community forum (bbs.guang.com)](https://bbs.guang.com/): the de-facto help centre, rules registry and announcement feed.
+- [Customer support entry (客服入口)](https://bbs.guang.com/d/32): how merchants reach human support via the Aiguang seller app.
+
+## Rules, pricing and legal
+
+- [Promotion fee schedule](https://bbs.guang.com/d/875): 推广服务费 is 2.00%–6.00% of each completed order's payment amount, varying by product category (effective 2023-01-11).
+- [Settlement rules (爱逛结算规则)](https://bbs.guang.com/d/907): settlement cycles, host commission timing, withdrawal via the Youzan store back office (effective 2023-04-23, revised 2024-02-21).
+- [Platform rules (规则)](https://bbs.guang.com/t/2-3): 114 posts covering shipping, pre-sale, after-sales and returns.
+- [User Agreement (用户协议)](https://bbs.guang.com/d/964): effective 2025-01-17.
+- [Privacy Statement (隐私声明)](https://bbs.guang.com/d/965): effective 2025-01-17.
+
+## Change notices
+
+- [Announcements (公告)](https://bbs.guang.com/t/2-1): 66 dated product, feature and fee notices.
+- [Advance public notices (公示)](https://bbs.guang.com/t/2-4): 77 posts giving notice before a rule change takes effect.
+- [Aiguang Worry-Free Purchase withdrawn](https://bbs.guang.com/d/967): the 爱逛放心购 buyer-protection service was discontinued 2025-04-03.
+
+## Optional
+
+- [Aiguang Android app listing](https://app.mi.com/details?id=com.guang.client): consumer app distribution.
+- [API Evangelist profile](https://apis.io/provider/aiguang/): this independent third-party profile of Aiguang's public API surface.
+
+<!-- generated: 2026-09-14 | method: generated | source: apis.yml + repo artifacts + fetched Aiguang pages; Aiguang serves no /llms.txt of its own (www.guang.com/llms.txt returns the SPA shell) -->

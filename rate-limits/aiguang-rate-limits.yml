@@ -1,0 +1,14 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.guang.com/
+limit_count: 0
+note: >-
+  Not applicable, recorded as an honest zero. Aiguang publishes no public API, no developer
+  portal and no API reference, so there is no documented rate limit, no published response
+  header (X-RateLimit-*, RateLimit-*, Retry-After) and no documented exhaustion status code
+  to record. Contract discovery on guang.com, www.guang.com, aiguang.com, api.guang.com and
+  bbs.guang.com found no OpenAPI, Swagger, GraphQL, MCP, AsyncAPI, WSDL or gRPC surface.
+  No RateLimits pointer is wired into apis.yml, because the provider publishes no rate-limit
+  signal to point at.
+limits: []
+headers: []

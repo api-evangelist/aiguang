@@ -1,0 +1,51 @@
+generated: '2026-09-14'
+method: searched
+source: https://bbs.guang.com/t/2-1
+api_versioning:
+  scheme: null
+  note: >-
+    No API is published, so there is no API versioning scheme, no version header, and no
+    versioned base path to record. The web surfaces carry path-segment generations
+    (www.guang.com/v4/... for the merchant live-shopping console, guang.com/v5/supplier/...
+    for the supplier platform), but these are application routes, not a published API version.
+deprecation_policy:
+  published: false
+  url: null
+  sunset_header: false
+  deprecation_header: false
+  note: >-
+    Aiguang publishes no RFC 8594 Sunset/Deprecation header policy and no formal deprecation
+    document. In practice it announces withdrawals and rule changes on its merchant forum:
+    the 公示 category (77 posts) is an advance-public-notice channel, and the settlement rules
+    (第十条, https://bbs.guang.com/d/907) commit the platform to running a 公示 procedure when
+    rules are revised. That is a stated notice practice, not a deprecation policy, so no
+    Deprecation pointer is wired into apis.yml.
+status_page:
+  published: false
+  url: null
+  note: >-
+    No status page found. status./health./trust. subdomains of guang.com and aiguang.com do
+    not resolve; incidents are posted to the forum instead (e.g. 12月28日苹果手机黑屏的通知,
+    https://bbs.guang.com/d/949).
+sla:
+  published: false
+  note: No SLA published on any public surface.
+deprecations:
+- name: 爱逛放心购 (Aiguang Worry-Free Purchase buyer-protection service)
+  status: removed
+  announced: '2025-04-03'
+  effective: '2025-04-03'
+  advance_notice_days: 0
+  url: https://bbs.guang.com/d/967
+  note: >-
+    Withdrawn same-day. Policies already bought remain in force under the original rules;
+    return and shipping-cost policy for buyers unchanged.
+- name: 供货分销业务 (supplier distribution business)
+  status: suspended
+  announced: '2023-05-26'
+  url: https://bbs.guang.com/d/919
+- name: 技术服务费 charged to promoters/hosts
+  status: removed
+  effective: '2023-01-11'
+  url: https://bbs.guang.com/d/875
+deprecated_operations: []
