@@ -64,5 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aiguang is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Aiguang (爱逛) is a Hangzhou, China live-streaming and short-video commerce platform built on the WeChat ecosystem. Consumers enter live rooms through the Aiguang WeChat mini-program and the Aiguang mobile app to take part in limited-time discounts, group buys and live-stream giveaways, while merchants and MCN hosts run their broadcasts from the Aiguang seller app and a PC live-broadcast console carrying interaction, marketing, promotion and analytics tooling. The platform is wired into the Youzan (有赞) CPS product pool so viewers can resell what they watch. Per its own user agreement and privacy statement (effective 2025-01-17) the platform is operated by 杭州杨杨得翼文化有限公司 (Hangzhou Yangyang Deyi Culture Co., Ltd.). Aiguang publishes no public developer program, API reference or machine-readable contract; its merchant, supplier and MCN surfaces are reached through account logins and a merchant community forum.
+
+**Areas:** Company · E-Commerce · Live Commerce · Live Streaming · Social Commerce · Retail · Video · WeChat · China · Marketplace
+
+## Aiguang on APIs.io
+
+Everything profiled for Aiguang is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aiguang/](https://apis.io/providers/aiguang/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aiguang Domain Security](https://apis.io/security/aiguang/aiguang-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aiguang Plans Pricing](https://apis.io/plans/aiguang/aiguang-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Aiguang Rate Limits](https://apis.io/rate-limits/aiguang/aiguang-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.guang.com/)
+- [Pricing](https://bbs.guang.com/d/875)
+- [Support](https://bbs.guang.com/d/32)
+- [Blog](https://www.guang.com/blog/)
+- [Terms of service](https://bbs.guang.com/d/964)
+- [Privacy policy](https://bbs.guang.com/d/965)
+
+## API Evangelist rating
+
+**Kin Score 16.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 38.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aiguang/](https://apis.io/providers/aiguang/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aiguang: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aiguang/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
